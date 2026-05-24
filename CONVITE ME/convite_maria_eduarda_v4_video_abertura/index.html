@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XV da Maria Eduarda</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="app">
+
+    <!-- TELA 1: convite fechado / aparência impressa -->
+    <section class="screen screen-cover active" id="screen-cover">
+      <div class="printed-envelope">
+        <div class="envelope-panel left"></div>
+        <div class="envelope-panel right"></div>
+
+        <button class="wax-seal" type="button" onclick="openPrintedEnvelope()" aria-label="Abrir convite">
+          <img src="imgs/icon.png" />
+        </button>
+      </div>
+    </section>
+
+    <!-- NOVA TELA 2: pré-convite -->
+   <section class="screen screen-pre-invite" id="screen-pre-invite">
+  <div class="pre-invite-text">
+    <img class="text-img text-img-1" src="copy/vc foi.png" alt="Você foi convidado" />
+    <img class="text-img text-img-2" src="copy/uma noite.png" alt="Uma noite elegante e inesquecível" />
+  </div>
+
+  <button
+    class="pre-invite-click-area"
+    type="button"
+    onclick="startOpeningVideo()"
+    aria-label="Ver convite">
+  </button>
+</section>
+
+    <!-- TELA 3: vídeo de abertura de 8 segundos -->
+    <section class="screen screen-video" id="screen-video">
+      <video
+        id="opening-video"
+        class="opening-video"
+        src="imgs/video.mp4"
+        playsinline
+        preload="auto"
+      ></video>
+
+      <div class="video-overlay">
+        <p class="eyebrow">Abrindo convite</p>
+        <h2>Maria Eduarda</h2>
+        <div class="progress">
+          <span id="progress-bar"></span>
+        </div>
+      </div>
+
+      <button class="skip-button" type="button" onclick="finishOpeningVideo()">
+        Pular abertura
+      </button>
+    </section>
+
+    <!-- TELA 4: convite completo / informações -->
+    <section class="screen screen-invite" id="screen-invite">
+      <div class="background-ornaments"></div>
+
+      <article class="invite-card">
+        <p class="eyebrow">XV da</p>
+        <h2 class="script-name">Maria Eduarda</h2>
+        <p class="intro-text">Celebre comigo meus 15 anos em uma noite inesquecível.</p>
+
+        <div class="date-block">
+          <span>Sábado</span>
+          <strong>14</strong>
+          <span>Março<br>2026</span>
+        </div>
+
+        <div class="event-info">
+          <p><strong>Horário:</strong> 21:00</p>
+          <p><strong>Local da festa:</strong> Rodovia MG 0 30 KM 32, Bairro Santa Rita MG</p>
+        </div>
+
+        <nav class="action-grid" aria-label="Opções do convite">
+          <button class="action-card" type="button" onclick="openModal('manual')">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="" />
+            <span>Manual do convidado</span>
+          </button>
+
+          <button class="action-card" type="button" onclick="openModal('gifts')">
+            <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=700&q=80" alt="" />
+            <span>Sugestões de presente</span>
+          </button>
+
+          <button class="action-card" type="button" onclick="openModal('location')">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="" />
+            <span>Localização da festa</span>
+          </button>
+
+          <button class="action-card" type="button" onclick="openModal('rsvp')">
+            <img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=700&q=80" alt="" />
+            <span>Confirmar presença</span>
+          </button>
+        </nav>
+      </article>
+    </section>
+
+    <div class="modal-layer" id="modal-layer" aria-hidden="true">
+      <div class="modal-backdrop" onclick="closeModal()"></div>
+
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" onclick="closeModal()" aria-label="Fechar">×</button>
+        <div id="modal-content"></div>
+      </section>
+    </div>
+  </main>
+
+</body>
+</html>
