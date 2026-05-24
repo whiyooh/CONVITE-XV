@@ -757,3 +757,126 @@ button {
   from { width: 0%; }
   to { width: 100%; }
 }
+
+/* TELA COPY */
+.screen-pre-invite {
+  min-height: 100vh;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("imgs/TELA 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pre-invite-text {
+  position: absolute;
+   margin-top: -30px; 
+
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+
+  width: 86%;
+  max-width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  pointer-events: none;
+}
+
+.text-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  opacity: 0;
+  filter: drop-shadow(0 8px 18px rgba(80, 20, 20, 0.32));
+}
+
+.text-img-1 {
+  animation: titleEnter 1s ease forwards 0.25s;
+}
+
+.text-img-2 {
+  width: 100%;
+  margin-top: -170px;
+  animation: subtitleEnter 1s ease forwards 0.75s;
+}
+
+.pre-invite-click-area {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.pre-invite-click-area::after {
+  content: "Ver convite";
+  position: absolute;
+  left: 50%;
+  bottom: 95px;
+  transform: translateX(-50%);
+
+  min-width: 190px;
+  padding: 15px 28px;
+
+  border-radius: 999px;
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.38);
+
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+
+  box-shadow: 0 14px 34px rgba(70, 0, 40, 0.3);
+  animation: buttonFloat 2.8s ease-in-out infinite;
+}
+
+@keyframes titleEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-28px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes subtitleEnter {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes buttonFloat {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-6px);
+  }
+}

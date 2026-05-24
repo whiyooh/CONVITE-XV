@@ -12,7 +12,7 @@ const modals = {
   manual: {
     eyebrow: "Manual",
     title: "Manual do Convidado",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80",
+    image: "CONVITE ME/convite_maria_eduarda_v4_video_abertura/icons/manual.png",
     body: `
       <p>Para manter a festa elegante e dentro da proposta visual da noite, siga estas orientações:</p>
       <ul>
