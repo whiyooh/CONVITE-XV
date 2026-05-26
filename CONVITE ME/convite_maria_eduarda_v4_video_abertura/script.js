@@ -7,24 +7,17 @@ let isModalTransitioning = false;
 let openingTimer = null;
 
 const VIDEO_FALLBACK_TIME = 8000;
-
+// Definição dos dados para os modais//
 const modals = {
-  manual: {
-    eyebrow: "Manual",
-    title: "Manual do Convidado",
-    image: "https://lajedo.com.br/wp-content/uploads/2022/11/festa-15-anos-rosa-arranjos-aereos.jpg",
-    body: `
-      <p>Para manter a festa elegante e dentro da proposta visual da noite, siga estas orientações:</p>
-      <ul>
-        <li>Traje sugerido: esporte fino.</li>
-        <li>Evite tons muito próximos ao rosa principal da debutante.</li>
-        <li>Chegue com alguns minutos de antecedência.</li>
-        <li>Prepare-se para fotos, música e uma noite especial.</li>
-      </ul>
-    `
-  },
+manual: {
+  title: "Manual do Convidado",
+  image: "icons/manual (2).png",
+  body: `
+    <p>Para manter a festa elegante e dentro da proposta visual da noite, siga estas orientações:</p>
+  `
+},
 
-  gifts: {
+gifts: {
     eyebrow: "Presentes",
     title: "Sugestões",
     image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=900&q=80",
@@ -60,12 +53,12 @@ const modals = {
     title: "Confirmar Presença",
     image: "https://www.espacopuzzle.com.br/blog/img/blog24.webp",
     body: `
-      <p>Toque no botão abaixo para confirmar sua presença no XV da Maria Eduarda.</p>
+      <p>Toque no botão abaixo para confirmar sua presença no 15 anos da Maria Eduarda.</p>
 
       <div class="modal-actions">
       <a
   class="button"
-  href="https://wa.me/5511969064545?text=Olá!%20Estou%20confirmando%20minha%20presença%20no%20XV%20da%20Maria%20Eduarda%20✨%0A%0ANome:%0AQuantidade%20de%20acompanhantes:"
+  href="https://wa.me/5511969064545?text=Olá!%20Estou%20confirmando%20minha%20presença%20no%2015%20da%20Maria%20Eduarda%20!!%20%0A%0ANome:%0ANome%20do%20acompanhante::"
   target="_blank"
   rel="noopener"
 >
@@ -151,7 +144,6 @@ function openModal(type) {
     <div class="modal-hero">
       <img src="${modal.image}" alt="" />
       <div class="modal-title-over">
-        <p>${modal.eyebrow}</p>
         <h2 id="modal-title">${modal.title}</h2>
       </div>
     </div>
