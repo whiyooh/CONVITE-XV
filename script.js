@@ -16,7 +16,6 @@ manual: {
     <p>Para manter a festa elegante e dentro da proposta visual da noite, siga estas orientações:</p>
 
       <ul>
-        <li>Chegue com antecedência para aproveitar todos os momentos especiais.</li>
         <li>Traje esporte fino.</li>
         <li>Ajude-nos a manter um ambiente agradável para todos os convidados.</li>
         <li>Prepare-se para uma noite cheia de carinho, alegria e muitas recordações.</li>
@@ -66,7 +65,7 @@ gifts: {
       <div class="modal-actions">
       <a
   class="button"
-  href="https://wa.me/5511969064545?text=Olá!%20Estou%20confirmando%20minha%20presença%20no%2015%20da%20Maria%20Eduarda%20!!%20%0A%0ANome:%0ANome%20do%20convidado::"
+  href="https://wa.me/5511969064545?text=Olá!%20Estou%20confirmando%20minha%20presença%20nos%2015%20da%20Maria%20Eduarda!!%20%0A%0ANome:"
   target="_blank"
   rel="noopener"
 >
