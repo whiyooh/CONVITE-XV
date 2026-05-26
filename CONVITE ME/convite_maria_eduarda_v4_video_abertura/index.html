@@ -65,48 +65,62 @@
     </section>
 
     <!-- TELA 4: convite completo / informações -->
-    <section class="screen screen-invite" id="screen-invite">
-      <div class="background-ornaments"></div>
+<section class="screen screen-invite" id="screen-invite">
+  <div class="background-ornaments"></div>
 
-      <article class="invite-card">
-        <img class="invite-image" src="imgs/icon.png" 
-        width="210"
-        height="180"
-        alt="Foto da aniversariante Maria Eduarda" />
+  <article class="invite-card">
+    <img
+      class="invite-image"
+      src="imgs/icon.png"
+      width="210"
+      height="180"
+      alt="Logo 15 anos Maria Eduarda"
+    />
 
-        
-        <p class="intro-text">Celebre comigo meus 15 anos em uma noite inesquecível.</p>
+    <div class="invite-title-block">
+      <span>15 anos</span>
+      <h1>Maria Eduarda</h1>
+    </div>
 
+    <p class="intro-text">
+      Celebre comigo meus 15 anos em uma noite elegante e inesquecível.
+    </p>
 
-        <div class="event-info">
-          <p><strong>Horário:</strong> 20:00</p>
-          <p><strong>Local da festa:</strong></p>
-          <p> Buffet Uriel - Estr. dos Pinheiros, 70 - Parque Viana - Barueri</p>
-        </div>
+    <div class="event-info">
+      <div class="event-date">
+        <span>Data</span>
+        <strong>15 de Junho</strong>
+      </div>
 
-        <nav class="action-grid" aria-label="Opções do convite">
-          <button class="action-card" type="button" onclick="openModal('manual')">
-            <img src="icons/manual (2).png" alt="" />
-            <span>Manual do convidado</span>
-          </button>
+      <p><strong>Horário:</strong> 20:00</p>
 
-          <button class="action-card" type="button" onclick="openModal('gifts')">
-            <img src="icons/icon presente.png" alt="" />
-            <span>Sugestões de presente</span>
-          </button>
+      <p><strong>Local da festa:</strong></p>
+      <p>Buffet Uriel - Estr. dos Pinheiros, 70 - Parque Viana - Barueri</p>
+    </div>
 
-          <button class="action-card" type="button" onclick="openModal('location')">
-            <img src="icons/icon local.png" alt="" />
-            <span>Localização da festa</span>
-          </button>
+    <nav class="action-grid" aria-label="Opções do convite">
+      <button class="action-card" type="button" onclick="openModal('manual')">
+        <img src="icons/manual (2).png" alt="" />
+        <span>Manual do convidado</span>
+      </button>
 
-          <button class="action-card" type="button" onclick="openModal('rsvp')">
-            <img src="icons/icon confirma.png" alt="" />
-            <span>Confirmar presença</span>
-          </button>
-        </nav>
-      </article>
-    </section>
+      <button class="action-card" type="button" onclick="openModal('gifts')">
+        <img src="icons/icon presente.png" alt="" />
+        <span>Sugestões de presente</span>
+      </button>
+
+      <button class="action-card" type="button" onclick="openModal('location')">
+        <img src="icons/icon local.png" alt="" />
+        <span>Localização da festa</span>
+      </button>
+
+      <button class="action-card" type="button" onclick="openModal('rsvp')">
+        <img src="icons/icon confirma.png" alt="" />
+        <span>Confirmar presença</span>
+      </button>
+    </nav>
+  </article>
+</section>
 
     <div class="modal-layer" id="modal-layer" aria-hidden="true">
       <div class="modal-backdrop" onclick="closeModal()"></div>
