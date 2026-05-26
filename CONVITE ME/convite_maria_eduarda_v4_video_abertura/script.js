@@ -31,11 +31,10 @@ const modals = {
     body: `
       <p>Algumas ideias simples para ajudar na escolha do presente:</p>
       <ul>
-        <li>Perfumes.</li>
-        <li>Maquiagem e skincare.</li>
-        <li>Acessórios delicados.</li>
-        <li>Bolsas, livros ou itens personalizados.</li>
-        <li>Vale-presente.</li>
+        <li> Roupas tamanho : M, G</li>
+        <li>Calçado : 36</li>
+        <li>Acessórios e maquiagem.</li>
+        <li>Bolsas e lembrançinhas.</li>
       </ul>
     `
   },
@@ -46,7 +45,7 @@ const modals = {
     image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80",
     body: `
       <p><strong>Espaço da Festa</strong></p>
-      <p>Rodovia MG 0 30 KM 32<br>Bairro Santa Rita MG</p>
+      <p> Buffet Uriel - Estr. dos Pinheiros, 70 - Parque Viana - Barueri<br></p>
 
       <div class="modal-actions">
         <a class="button" href="https://maps.google.com" target="_blank" rel="noopener">
