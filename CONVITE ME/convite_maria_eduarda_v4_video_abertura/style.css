@@ -1152,7 +1152,7 @@ button {
   inset: -40%;
 
   background:
-    radial-gradient(circle, rgba(255,255,255,0.9) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(255, 191, 226, 0.9) 0 1px, transparent 2px),
     radial-gradient(circle, rgba(255,220,240,0.8) 0 2px, transparent 3px),
     radial-gradient(circle, rgba(255,215,160,0.7) 0 2px, transparent 3px);
 
@@ -1256,7 +1256,7 @@ button {
   color: #fff;
 
   text-shadow:
-    0 0 22px rgba(255,220,180,0.35),
+    0 0 22px rgba(255, 180, 233, 0.35),
     0 6px 22px rgba(0,0,0,0.35);
 }
 

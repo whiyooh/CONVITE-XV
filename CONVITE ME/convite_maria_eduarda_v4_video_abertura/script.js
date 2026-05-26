@@ -12,7 +12,7 @@ const modals = {
   manual: {
     eyebrow: "Manual",
     title: "Manual do Convidado",
-    image: "CONVITE ME/convite_maria_eduarda_v4_video_abertura/icons/manual.png",
+    image: "https://www.arthurcaliman.com.br/wp-content/uploads/2024/10/adolescentes-festa-de-15-anos.jpg.webp",
     body: `
       <p>Para manter a festa elegante e dentro da proposta visual da noite, siga estas orientações:</p>
       <ul>
@@ -48,7 +48,7 @@ const modals = {
       <p> Buffet Uriel - Estr. dos Pinheiros, 70 - Parque Viana - Barueri<br></p>
 
       <div class="modal-actions">
-        <a class="button" href="https://maps.google.com" target="_blank" rel="noopener">
+        <a class="button" href="https://www.espacopuzzle.com.br/blog/img/blog24.webp" target="_blank" rel="noopener">
           Abrir no Google Maps
         </a>
       </div>
@@ -58,7 +58,7 @@ const modals = {
   rsvp: {
     eyebrow: "Confirmação",
     title: "Confirmar Presença",
-    image: "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=900&q=80",
+    image: "h",
     body: `
       <p>Toque no botão abaixo para confirmar sua presença no XV da Maria Eduarda.</p>
 
