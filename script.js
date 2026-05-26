@@ -19,7 +19,7 @@ manual: {
         <li>Chegue com antecedência para aproveitar todos os momentos especiais.</li>
         <li>Sugerimos traje esporte fino. Evite roupas na cor rosa, reservada à aniversariante.</li>
         <li>Ajude-nos a manter um ambiente agradável para todos os convidados.</li>
-        <li>Prepare-se para uma tarde cheia de carinho, alegria e muitas recordações.</li>
+        <li>Prepare-se para uma Noite cheia de carinho, alegria e muitas recordações.</li>
       </ul>
       
   `
