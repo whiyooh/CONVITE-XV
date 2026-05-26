@@ -63,9 +63,14 @@ const modals = {
       <p>Toque no botão abaixo para confirmar sua presença no XV da Maria Eduarda.</p>
 
       <div class="modal-actions">
-        <button class="button" type="button" onclick="confirmPresence()">
-          Confirmar presença
-        </button>
+      <a
+  class="button"
+  href="https://wa.me/5511969064545?text=Olá!%20Estou%20confirmando%20minha%20presença%20no%20XV%20da%20Maria%20Eduarda%20✨%0A%0ANome:%0AQuantidade%20de%20acompanhantes:"
+  target="_blank"
+  rel="noopener"
+>
+  Confirmar presença
+</a>
       </div>
     `
   }
