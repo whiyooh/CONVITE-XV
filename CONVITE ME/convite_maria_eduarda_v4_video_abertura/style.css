@@ -121,9 +121,11 @@ button {
   background: #061743;
 }
 .wax-seal{
-  display: flex;
+  display: flex
   flex-direction: column;
+  justify-content: center;
   background-image: none;
+  alight-items: center;
 }
 
 .printed-envelope {
@@ -779,7 +781,7 @@ button {
   transform: translateX(-50%);
   z-index: 4;
 
-  width: 86%;
+  width: 81%;
   max-width: 360px;
 
   display: flex;
@@ -838,7 +840,7 @@ button {
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255,255,255,0.38);
 
-  color: #fff;
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -878,5 +880,488 @@ button {
 
   50% {
     transform: translateX(-50%) translateY(-6px);
+  }
+}
+
+/* ========================= */
+/* TELA 4 — VERSÃO MÁGICA */
+/* ========================= */
+
+.screen-invite {
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top, rgba(255, 180, 220, 0.16), transparent 18%),
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.08), transparent 20%),
+    radial-gradient(circle at 80% 20%, rgba(255,220,240,0.08), transparent 24%),
+    linear-gradient(
+      180deg,
+      #14020a 0%,
+      #2d0616 28%,
+      #5c0d2c 60%,
+      #18030c 100%
+    );
+}
+
+/* partículas brilhantes */
+
+.screen-invite::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.9) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(255,220,240,0.8) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(255,215,160,0.7) 0 2px, transparent 3px);
+
+  background-size:
+    180px 180px,
+    260px 260px,
+    320px 320px;
+
+  opacity: 0.35;
+
+  animation: magicalParticles 28s linear infinite;
+  pointer-events: none;
+}
+
+/* glow ambiente */
+
+.screen-invite::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(255,255,255,0.08),
+      transparent 60%
+    );
+
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* card principal */
+
+.invite-card {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.18),
+      rgba(255,255,255,0.08)
+    );
+
+  border: 1px solid rgba(255,255,255,0.24);
+
+  backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.28);
+
+  animation: inviteFloat 7s ease-in-out infinite;
+}
+
+/* brilho interno */
+
+.invite-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent 20%,
+      rgba(255,255,255,0.12) 48%,
+      transparent 75%
+    );
+
+  transform: translateX(-120%);
+  animation: shineMove 7s linear infinite;
+
+  pointer-events: none;
+}
+
+/* nome */
+
+.script-name {
+  color: #fff;
+
+  text-shadow:
+    0 0 18px rgba(255,180,220,0.35),
+    0 10px 35px rgba(0,0,0,0.4);
+
+  letter-spacing: -0.03em;
+}
+
+/* texto */
+
+.intro-text {
+  color: rgba(255,255,255,0.9);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* data */
+
+.date-block strong {
+  color: #fff;
+
+  text-shadow:
+    0 0 22px rgba(255,220,180,0.35),
+    0 6px 22px rgba(0,0,0,0.35);
+}
+
+/* bloco info */
+
+.event-info {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.16),
+      rgba(255,255,255,0.08)
+    );
+
+  border: 1px solid rgba(255,255,255,0.16);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.18),
+    0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* cards mágicos */
+
+.action-card {
+  border: 1px solid rgba(255,255,255,0.14);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.14),
+      rgba(255,255,255,0.06)
+    );
+
+  backdrop-filter: blur(16px);
+
+  transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    border-color .45s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  border-color: rgba(255,255,255,0.28);
+
+  box-shadow:
+    0 24px 50px rgba(0,0,0,0.28),
+    0 0 28px rgba(255,180,220,0.16);
+}
+
+.action-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.12),
+      transparent 40%
+    );
+
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* textos cards */
+
+.action-card span {
+  font-size: 0.82rem;
+  line-height: 1.3;
+
+  letter-spacing: 0.05em;
+}
+
+/* ========================= */
+/* ANIMAÇÕES */
+/* ========================= */
+
+@keyframes magicalParticles {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(120px) rotate(6deg);
+  }
+}
+
+@keyframes inviteFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes shineMove {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(140%);
+  }
+}
+/* ========================= */
+/* TELA 4 — VERSÃO MÁGICA */
+/* ========================= */
+
+.screen-invite {
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top, rgba(255, 180, 220, 0.16), transparent 18%),
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.08), transparent 20%),
+    radial-gradient(circle at 80% 20%, rgba(255,220,240,0.08), transparent 24%),
+    linear-gradient(
+      180deg,
+      #14020a 0%,
+      #2d0616 28%,
+      #5c0d2c 60%,
+      #18030c 100%
+    );
+}
+
+/* partículas brilhantes */
+
+.screen-invite::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.9) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(255,220,240,0.8) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(255,215,160,0.7) 0 2px, transparent 3px);
+
+  background-size:
+    180px 180px,
+    260px 260px,
+    320px 320px;
+
+  opacity: 0.35;
+
+  animation: magicalParticles 28s linear infinite;
+  pointer-events: none;
+}
+
+/* glow ambiente */
+
+.screen-invite::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(255,255,255,0.08),
+      transparent 60%
+    );
+
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* card principal */
+
+.invite-card {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.18),
+      rgba(255,255,255,0.08)
+    );
+
+  border: 1px solid rgba(255,255,255,0.24);
+
+  backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.28);
+
+  animation: inviteFloat 7s ease-in-out infinite;
+}
+
+/* brilho interno */
+
+.invite-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent 20%,
+      rgba(255,255,255,0.12) 48%,
+      transparent 75%
+    );
+
+  transform: translateX(-120%);
+  animation: shineMove 7s linear infinite;
+
+  pointer-events: none;
+}
+
+/* nome */
+
+.script-name {
+  color: #fff;
+
+  text-shadow:
+    0 0 18px rgba(255,180,220,0.35),
+    0 10px 35px rgba(0,0,0,0.4);
+
+  letter-spacing: -0.03em;
+}
+
+/* texto */
+
+.intro-text {
+  color: rgba(255,255,255,0.9);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* data */
+
+.date-block strong {
+  color: #fff;
+
+  text-shadow:
+    0 0 22px rgba(255,220,180,0.35),
+    0 6px 22px rgba(0,0,0,0.35);
+}
+
+/* bloco info */
+
+.event-info {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.16),
+      rgba(255,255,255,0.08)
+    );
+
+  border: 1px solid rgba(255,255,255,0.16);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.18),
+    0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* cards mágicos */
+
+.action-card {
+  border: 1px solid rgba(255,255,255,0.14);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.14),
+      rgba(255,255,255,0.06)
+    );
+
+  backdrop-filter: blur(16px);
+
+  transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    border-color .45s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  border-color: rgba(255,255,255,0.28);
+
+  box-shadow:
+    0 24px 50px rgba(0,0,0,0.28),
+    0 0 28px rgba(255,180,220,0.16);
+}
+
+.action-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.12),
+      transparent 40%
+    );
+
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* textos cards */
+
+.action-card span {
+  font-size: 0.82rem;
+  line-height: 1.3;
+
+  letter-spacing: 0.05em;
+}
+
+/* ========================= */
+/* ANIMAÇÕES */
+/* ========================= */
+
+@keyframes magicalParticles {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(120px) rotate(6deg);
+  }
+}
+
+@keyframes inviteFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes shineMove {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(140%);
   }
 }
