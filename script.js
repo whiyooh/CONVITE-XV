@@ -17,7 +17,7 @@ manual: {
 
       <ul>
         <li>Chegue com antecedência para aproveitar todos os momentos especiais.</li>
-        <li>Sugerimos traje esporte fino. Evite roupas na cor rosa, reservada à aniversariante.</li>
+        <li>Traje esporte fino.</li>
         <li>Ajude-nos a manter um ambiente agradável para todos os convidados.</li>
         <li>Prepare-se para uma noite cheia de carinho, alegria e muitas recordações.</li>
       </ul>
@@ -66,7 +66,7 @@ gifts: {
       <div class="modal-actions">
       <a
   class="button"
-  href="https://wa.me/5511969064545?text=Olá!%20Estou%20confirmando%20minha%20presença%20no%2015%20da%20Maria%20Eduarda%20!!%20%0A%0ANome:%0ANome%20do%20acompanhante::"
+  href="https://wa.me/5511969064545?text=Olá!%20Estou%20confirmando%20minha%20presença%20no%2015%20da%20Maria%20Eduarda%20!!%20%0A%0ANome:%0ANome%20do%20convidado::"
   target="_blank"
   rel="noopener"
 >
